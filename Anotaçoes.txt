@@ -1,0 +1,10 @@
+
+links sobre pesquisa typeorm=>https://typeorm.io/#/find-options
+
+query in typeorm
+https://orkhan.gitbook.io/typeorm/docs/select-query-builder
+https://www.tutorialspoint.com/typeorm/typeorm_query_builder.htm
+
+usar o cors
+https://ezdevs.com.br/comecando-uma-api-rest-com-node-js/
+

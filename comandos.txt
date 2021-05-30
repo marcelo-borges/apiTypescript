@@ -1,0 +1,47 @@
+yarn dev:server
+
+yarn init -y
+yarn add express
+yarn add cors
+yarn add typescript -D
+yarn add @types/express -D
+yarn add ts-node-dev -D
+
+yarn add eslint -D
+yarn eslint --init
+yarn add eslint-import-resolver-typescript -D
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+
+yarn add uuid
+yarn add date-fns
+yarn add typeorm pg
+
+yarn add multer
+yarn add @types/multer -D
+
+yarn add reflect-metadata
+
+yarn add bcryptjs
+yarn add -D @types/bcryptjs
+
+yarn add jsonwebtoken
+yarn add -D @types/jsonwebtoken
+
+yarn add express-async-errors
+
+yarn typeorm migration:create -n CreateUsers
+yarn typeorm migration:create -n CreateEmployees
+yarn typeorm migration:create -n CreateCompanys
+yarn typeorm migration:create -n CreateFKCompanyEmployee
+yarn typeorm migration:create -n CreateServices
+yarn typeorm migration:create -n CreateServicePrice
+yarn typeorm migration:create -n AlterEmployee
+yarn typeorm migration:create -n CreateAppointments
+
+
+yarn typeorm migration:run
+yarn typeorm migration:revert
+yarn typeorm migration:show
+
+=> Precisa criar uma proteção para verificar se
+os códigos são uuid, senão dá erro 500 sem justificar o motivo
